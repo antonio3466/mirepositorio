@@ -27,3 +27,27 @@ export class Persona {
         return " - La Persona está muerta"
     }
 }
+
+
+export class Alumno extends Persona {
+
+ matricula;
+ clase;
+ aula;
+
+
+ escribir(){
+
+    return "escribiendo"
+ }
+     
+
+   
+ 
+
+ estudia() {
+   return "estudiando"
+
+ }
+
+}

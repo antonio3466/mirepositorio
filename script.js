@@ -1,15 +1,19 @@
-import { Persona } from "./Persona.js";
+import { Persona, Alumno } from "./Persona.js";
 
 var parrafoPersona = document.getElementById("objetoPersona");
 
 var parrafoMetodoPersona = document.getElementById("metodoPersona");
 
-var miPersona = new Persona("carrizo")
+var miPersona = new Persona("carrizo");
 
-parrafoPersona.innerText = miPersona.apellido + ' '  + miPersona.nombre
+var miAlumno = new Alumno("Hernadez","pedro");
+
+
+
+
+parrafoPersona.innerText = miAlumno.apellido + ' '  + miAlumno.nombre
 
 parrafoMetodoPersona.innerText = miPersona.correr();
 
-//miPersona.morir();
+miPersona.morir();
 parrafoMetodoPersona.innerText += miPersona.mostrarEstado(); 
-
