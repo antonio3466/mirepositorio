@@ -26,7 +26,19 @@ export class Persona {
         }
         return " - La Persona está muerta"
     }
+
+    
+     
+    mostaraOcupacion() {
+
+        return "la persona esta ocupada";
+     }
+
+
+
 }
+
+
 
 
 export class Alumno extends Persona {
@@ -42,12 +54,18 @@ export class Alumno extends Persona {
  }
      
 
-   
  
-
  estudia() {
    return "estudiando"
 
  }
+
+ mostaraOcupacion() {
+
+    return "El alumno esta estudiando";
+ }
+
+
+
 
 }

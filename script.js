@@ -4,16 +4,16 @@ var parrafoPersona = document.getElementById("objetoPersona");
 
 var parrafoMetodoPersona = document.getElementById("metodoPersona");
 
-var miPersona = new Persona("carrizo");
+var miPersona = new Persona("carrizo", "juan carlos");
 
 var miAlumno = new Alumno("Hernadez","pedro");
 
 
 
-
+miAlumno.aula = "5 17"
 parrafoPersona.innerText = miAlumno.apellido + ' '  + miAlumno.nombre
 
-parrafoMetodoPersona.innerText = miPersona.correr();
+parrafoMetodoPersona.innerText = miAlumno.correr();
 
 miPersona.morir();
-parrafoMetodoPersona.innerText += miPersona.mostrarEstado(); 
+parrafoMetodoPersona.innerText += miPersona.mostrarOcupacion(); 
